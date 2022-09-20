@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\79995\\Desktop\\GEEK BRAINS\\итоги специализации.1четверть\\final test\\test\\task1\\task1.csproj": {}
+    "C:\\Users\\79995\\Desktop\\GEEK BRAINS\\итоги каждую четверть\\final test\\test\\task1\\task1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\79995\\Desktop\\GEEK BRAINS\\итоги специализации.1четверть\\final test\\test\\task1\\task1.csproj": {
+    "C:\\Users\\79995\\Desktop\\GEEK BRAINS\\итоги каждую четверть\\final test\\test\\task1\\task1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\79995\\Desktop\\GEEK BRAINS\\итоги специализации.1четверть\\final test\\test\\task1\\task1.csproj",
+        "projectUniqueName": "C:\\Users\\79995\\Desktop\\GEEK BRAINS\\итоги каждую четверть\\final test\\test\\task1\\task1.csproj",
         "projectName": "task1",
-        "projectPath": "C:\\Users\\79995\\Desktop\\GEEK BRAINS\\итоги специализации.1четверть\\final test\\test\\task1\\task1.csproj",
+        "projectPath": "C:\\Users\\79995\\Desktop\\GEEK BRAINS\\итоги каждую четверть\\final test\\test\\task1\\task1.csproj",
         "packagesPath": "C:\\Users\\79995\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\79995\\Desktop\\GEEK BRAINS\\итоги специализации.1четверть\\final test\\test\\task1\\obj\\",
+        "outputPath": "C:\\Users\\79995\\Desktop\\GEEK BRAINS\\итоги каждую четверть\\final test\\test\\task1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\79995\\AppData\\Roaming\\NuGet\\NuGet.Config"

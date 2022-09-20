@@ -42,7 +42,7 @@ void PrintInitialArray(string[] initialArray) // метод вывода пер�
     }
 }
 
-void NoMoreThanThreeArray(string[] initialArray) // метод поиска строк, длина которых меньше, либо равна 3 символам
+void NoMoreThanThreeArray(string[] initialArray) // метод поиска строк, длина которых меньше, либо равна трём символам
 {
     int k = 0; //k-позиция в новом массиве
     for (int i = 0; i < initialArray.Length; i++)

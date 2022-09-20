@@ -8,30 +8,33 @@
 [“Russia”, “Denmark”, “Kazan”] → []
 */
 
-/*1.задать массив СТРОК ИМЕННО из 5 элементов -тк не указано,кол-во сама выбрала
-2.проверить массив на количество символов через for, 
-3.если меньше или 3-вывести через новый массив в for, если больше-нет */
-
 Console.Clear();
 string[] initialArray = new string[5];
 Console.WriteLine();
 FillArray(initialArray);
 Console.WriteLine();
-Console.Write($"Элементы введённого массива: ");
-PrintArray(initialArray);
+Console.WriteLine($"Элементы введённого массива: ");
+PrintInitialArray(initialArray);
+Console.WriteLine();
+
+string[] newArray = new string[initialArray.Length];
+NoMoreThanThreeArray(initialArray);
+Console.WriteLine("Элементы нового массива, длина которых меньше, либо равна 3 символам: ");
+PrintNewArray(newArray);
+Console.WriteLine();
 Console.WriteLine();
 
 
-void FillArray(string[] initialArray)
+void FillArray(string[] initialArray) // метод заполнения первоначального массива
 {
-    for (int i = 0; i < initialArray.Length; i++)
+    for (int i = 0; i < initialArray.Length; i++) //i-позиция в массиве
     {
-        Console.Write($"Введите значение элемента массива {i+1}: ");
+        Console.Write($"Введите значение элемента массива {i + 1}: ");
         initialArray[i] = Convert.ToString(Console.ReadLine());
     }
 }
 
-void PrintArray(string[] initialArray)
+void PrintInitialArray(string[] initialArray) // метод вывода первоначального массива
 {
     for (int i = 0; i < initialArray.Length; i++)
     {
@@ -39,31 +42,26 @@ void PrintArray(string[] initialArray)
     }
 }
 
-
-//string[] noMoreThanThreeArray = new string[initialArray.Length];
-
-//FillArray(initialArray, userLength);
-
-
-
-/*
-NumberOfCharacters(initialArray, noMoreThanThreeArray);
-Console.Write("Массив из строк длина которых меньше или равна 3 символам: ");
-PrintArray(noMoreThanThreeArray);
-
-
-
-void NumberOfCharacters(string[] initialArray, string[] noMoreThanThreeArray)
+void NoMoreThanThreeArray(string[] initialArray) // метод поиска строк, длина которых меньше, либо равна 3 символам
 {
-   int count = 0;
-   for (int i = 0; i < initialArray.Length; i++)
-   {
-       if (initialArray[i].Length <= 3)
-       {
-           noMoreThanThreeArray[count] = initialArray[i];
-           count++;
-       }
-   }
+    int k = 0; //k-позиция в новом массиве
+    for (int i = 0; i < initialArray.Length; i++)
+    {
+        if (initialArray[i].Length <= 3)
+        {
+            newArray[k] = initialArray[i];
+            k++;
+        }
+    }
 }
 
-*/
+void PrintNewArray(string[] newArray) // метод вывода нового массива
+{
+    for (int k = 0; k < newArray.Length; k++)
+    {
+        Console.Write($"  {newArray[k]}  ");
+    }
+}
+
+
+

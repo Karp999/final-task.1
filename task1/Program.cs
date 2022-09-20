@@ -19,7 +19,7 @@ Console.WriteLine();
 
 string[] newArray = new string[initialArray.Length];
 NoMoreThanThreeArray(initialArray);
-Console.WriteLine("Элементы нового массива, длина которых меньше, либо равна 3 символам: ");
+Console.WriteLine("Элементы нового массива, длина которых меньше, либо равна трём символам: ");
 PrintNewArray(newArray);
 Console.WriteLine();
 Console.WriteLine();
